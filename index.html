@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Personal portfolio of Shaza Mosad - Computer Science & AI Student at Cairo University and Software Engineering Trainee at DEPI (.NET / Full Stack)." />
+  <meta name="keywords" content="Shaza Mosad, Portfolio, Software Engineer, Full Stack Developer, C#, .NET, Competitive Programming, Cairo University" />
+  <meta name="author" content="Shaza Mosad" />
+  <title>Shaza Mosad | Software Engineer & CS Student</title>
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="./styles.css" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>" />
+</head>
+<body>
+
+  <!-- ========================================================================
+       Header & Navigation Bar
+       ======================================================================== -->
+  <header class="header">
+    <div class="container nav-container">
+      <a href="#hero" class="logo" aria-label="Shaza Mosad Home">
+        <span class="logo-badge">SM</span>
+        <span>Shaza Mosad</span>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#experience" class="nav-link">Experience & Traineeship</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#volunteering" class="nav-link">Volunteering</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Action Buttons & Theme Switcher -->
+      <div class="nav-actions">
+        <!-- Light/Dark Mode Switcher -->
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Light/Dark Theme" title="Toggle Theme">
+          <!-- Sun Icon (shown in Light Mode) -->
+          <svg class="theme-icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <!-- Moon Icon (shown in Dark Mode) -->
+          <svg class="theme-icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <!-- Mobile Hamburger Toggle -->
+        <button id="mobile-toggle" class="mobile-toggle" aria-label="Open Navigation Menu" aria-expanded="false">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Menu -->
+    <div id="mobile-drawer" class="mobile-drawer" aria-label="Mobile Navigation Menu">
+      <a href="#about" class="nav-link mobile-nav-link">About</a>
+      <a href="#skills" class="nav-link mobile-nav-link">Skills</a>
+      <a href="#experience" class="nav-link mobile-nav-link">Experience & Traineeship</a>
+      <a href="#projects" class="nav-link mobile-nav-link">Projects</a>
+      <a href="#volunteering" class="nav-link mobile-nav-link">Volunteering</a>
+      <a href="#contact" class="nav-link mobile-nav-link">Contact</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- ======================================================================
+         Hero Section
+         ====================================================================== -->
+    <section id="hero" class="hero-section">
+      <div class="container hero-grid">
+        <!-- Hero Text Content -->
+        <div class="hero-content">
+          <div class="status-badge">
+            <span class="status-dot"></span>
+            <span>Available for Opportunities & Projects</span>
+          </div>
+
+          <h1 class="hero-headline">
+            Hi, I'm <span class="gradient-text">Shaza Mosad</span> 👋
+          </h1>
+
+          <p class="hero-subheadline">
+            Computer Science & AI Student at <strong>Cairo University</strong> | Software Engineering Trainee at <strong>DEPI</strong>
+          </p>
+
+          <!-- Current Status Callout Card -->
+          <div class="current-status-callout">
+            <div class="callout-header">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="12" y1="8" x2="12" y2="12"></line>
+                <line x1="12" y1="16" x2="12.01" y2="16"></line>
+              </svg>
+              <span>Current Status</span>
+            </div>
+            <p class="callout-text">
+              Currently enrolled in <strong>Digital Egypt Pioneers Initiative (DEPI)</strong> as a <strong>Software Engineer Track - Full Stack Developer using C# and .NET Framework</strong>.
+            </p>
+          </div>
+
+          <!-- CTAs -->
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary">
+              <span>Contact Me</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a href="#projects" class="btn btn-secondary">
+              <span>View Projects</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+              </svg>
+            </a>
+          </div>
+
+          <!-- Quick Social Links -->
+          <div class="hero-socials">
+            <a href="https://www.linkedin.com/in/shazamosad" target="_blank" rel="noopener noreferrer" class="hero-social-link" title="LinkedIn Profile">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76c.86 0 1.55-.7 1.55-1.55a1.55 1.55 0 0 0-3.1 0c0 .86.69 1.55 1.55 1.55m1.37 9.74v-8.37H5.1v8.37h2.73z"/>
+              </svg>
+              <span>LinkedIn</span>
+            </a>
+            <a href="https://github.com/shazamosad" target="_blank" rel="noopener noreferrer" class="hero-social-link" title="GitHub Profile">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/>
+              </svg>
+              <span>GitHub</span>
+            </a>
+            <a href="mailto:shazamosad78@gmail.com" class="hero-social-link" title="Send Email">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              <span>Email</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Profile Image Frame -->
+        <div class="hero-visual">
+          <div class="profile-card-wrapper">
+            <div class="profile-glow-ring"></div>
+            <div class="profile-card">
+              <img id="hero-profile-img" src="./profile.jpg" alt="Shaza Mosad" class="profile-img" loading="eager" />
+            </div>
+
+            <!-- Floating Badges -->
+            <div class="floating-pill floating-pill-1">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--primary);">
+                <polyline points="16 18 22 12 16 6"></polyline>
+                <polyline points="8 6 2 12 8 18"></polyline>
+              </svg>
+              <span>Full-Stack C# .NET</span>
+            </div>
+
+            <div class="floating-pill floating-pill-2">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #F59E0B;">
+                <circle cx="12" cy="8" r="7"></circle>
+                <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+              </svg>
+              <span>CP Level 2</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         About Me Section
+         ====================================================================== -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">About Me</span>
+          <h2 class="section-title">Driven by Curiosity & Problem Solving</h2>
+          <p class="section-description">
+            Combining rigorous academic foundations in Computer Science & AI with hands-on full-stack development experience and competitive programming grit.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Narrative Card -->
+          <div class="glass-card about-narrative">
+            <div>
+              <p class="about-text">
+                I am a motivated <strong>Computer Science & Artificial Intelligence</strong> student at <strong>Cairo University (2024–2028)</strong> with a strong academic standing of <strong>GPA: Very Good</strong>.
+              </p>
+              <p class="about-text">
+                My passion lies in <strong>software engineering, full-stack web development</strong>, and building clean, robust systems. Having reached <strong>Level 2 in Competitive Programming</strong>, I have cultivated strong analytical thinking and efficient problem-solving disciplines that I apply directly to modern software architecture.
+              </p>
+              <p class="about-text">
+                Currently, I am expanding my software engineering expertise through the <strong>Digital Egypt Pioneers Initiative (DEPI)</strong> in the Full Stack Developer track using <strong>C# and .NET Framework</strong>.
+              </p>
+            </div>
+
+            <!-- Mini Highlight Badges -->
+            <div class="about-highlights-grid">
+              <div class="highlight-mini-card">
+                <div class="mini-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                    <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                  </svg>
+                </div>
+                <div>
+                  <div class="mini-title">University</div>
+                  <div class="mini-value">Cairo University</div>
+                </div>
+              </div>
+
+              <div class="highlight-mini-card">
+                <div class="mini-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 6 12 12 14 14"></polyline>
+                  </svg>
+                </div>
+                <div>
+                  <div class="mini-title">Timeline</div>
+                  <div class="mini-value">2024 – 2028</div>
+                </div>
+              </div>
+
+              <div class="highlight-mini-card">
+                <div class="mini-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                  </svg>
+                </div>
+                <div>
+                  <div class="mini-title">Academic GPA</div>
+                  <div class="mini-value">Very Good</div>
+                </div>
+              </div>
+
+              <div class="highlight-mini-card">
+                <div class="mini-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                  </svg>
+                </div>
+                <div>
+                  <div class="mini-title">Algorithmic Rank</div>
+                  <div class="mini-value">CP Level 2</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Feature Cards Column -->
+          <div class="about-stats-column">
+            <div class="glass-card stat-feature-card">
+              <div class="stat-icon-box">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                  <line x1="8" y1="21" x2="16" y2="21"></line>
+                  <line x1="12" y1="17" x2="12" y2="21"></line>
+                </svg>
+              </div>
+              <div class="stat-content">
+                <h4>Full-Stack Development</h4>
+                <p>Architecting responsive frontends and reliable backend services with C#, .NET, and modern web standards.</p>
+              </div>
+            </div>
+
+            <div class="glass-card stat-feature-card">
+              <div class="stat-icon-box">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
+              <div class="stat-content">
+                <h4>Competitive Problem Solving</h4>
+                <p>Over 100+ solved algorithmic problems utilizing deep mathematical logic, sorting, graphs, and dynamic programming.</p>
+              </div>
+            </div>
+
+            <div class="glass-card stat-feature-card">
+              <div class="stat-icon-box">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="9" cy="7" r="4"></circle>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                </svg>
+              </div>
+              <div class="stat-content">
+                <h4>Leadership & Team Culture</h4>
+                <p>Proactive HR organizer at Star Union, bringing structured communication, cross-functional harmony, and reliability.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         Skills Section
+         ====================================================================== -->
+    <section id="skills" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Technical Competencies</span>
+          <h2 class="section-title">Skills & Toolset</h2>
+          <p class="section-description">
+            A versatile set of programming languages, enterprise frameworks, algorithmic methodologies, and professional competencies.
+          </p>
+        </div>
+
+        <!-- Filter Tabs -->
+        <div class="skills-tabs">
+          <button class="skill-tab-btn active" data-filter="all">All Skills</button>
+          <button class="skill-tab-btn" data-filter="languages">Languages</button>
+          <button class="skill-tab-btn" data-filter="frameworks">Frameworks & Web</button>
+          <button class="skill-tab-btn" data-filter="problem-solving">Problem Solving</button>
+          <button class="skill-tab-btn" data-filter="tools">Tools & Platforms</button>
+          <button class="skill-tab-btn" data-filter="soft-skills">Soft Skills</button>
+        </div>
+
+        <!-- Skills Grid -->
+        <div class="skills-grid">
+          <!-- 1. Languages -->
+          <div class="glass-card skill-category-card" data-category="languages">
+            <div class="category-header">
+              <div class="category-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
+              <h3>Programming Languages</h3>
+            </div>
+            <div class="category-pills">
+              <span class="skill-pill featured">C++</span>
+              <span class="skill-pill featured">Java</span>
+              <span class="skill-pill featured">C#</span>
+              <span class="skill-pill">HTML5</span>
+              <span class="skill-pill">CSS3</span>
+              <span class="skill-pill">JavaScript</span>
+            </div>
+          </div>
+
+          <!-- 2. Frameworks & Web -->
+          <div class="glass-card skill-category-card" data-category="frameworks">
+            <div class="category-header">
+              <div class="category-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                  <line x1="8" y1="21" x2="16" y2="21"></line>
+                  <line x1="12" y1="17" x2="12" y2="21"></line>
+                </svg>
+              </div>
+              <h3>Frameworks & Web</h3>
+            </div>
+            <div class="category-pills">
+              <span class="skill-pill featured">.NET Framework</span>
+              <span class="skill-pill featured">Full-Stack Web Development</span>
+              <span class="skill-pill">ASP.NET / Web APIs</span>
+              <span class="skill-pill">Responsive Design</span>
+              <span class="skill-pill">RESTful Architecture</span>
+            </div>
+          </div>
+
+          <!-- 3. Problem Solving -->
+          <div class="glass-card skill-category-card" data-category="problem-solving">
+            <div class="category-header">
+              <div class="category-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+                  <line x1="12" y1="17" x2="12.01" y2="17"></line>
+                </svg>
+              </div>
+              <h3>Problem Solving & CS</h3>
+            </div>
+            <div class="category-pills">
+              <span class="skill-pill featured">Competitive Programming (Level 2)</span>
+              <span class="skill-pill featured">Algorithms</span>
+              <span class="skill-pill">Sorting Algorithms</span>
+              <span class="skill-pill">Dynamic Programming</span>
+              <span class="skill-pill">Data Structures</span>
+            </div>
+          </div>
+
+          <!-- 4. Tools & Platforms -->
+          <div class="glass-card skill-category-card" data-category="tools">
+            <div class="category-header">
+              <div class="category-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+                </svg>
+              </div>
+              <h3>Tools & Platforms</h3>
+            </div>
+            <div class="category-pills">
+              <span class="skill-pill featured">Git</span>
+              <span class="skill-pill featured">GitHub</span>
+              <span class="skill-pill">Visual Studio</span>
+              <span class="skill-pill">VS Code</span>
+              <span class="skill-pill">Microsoft Office Suite</span>
+            </div>
+          </div>
+
+          <!-- 5. Soft Skills -->
+          <div class="glass-card skill-category-card" data-category="soft-skills">
+            <div class="category-header">
+              <div class="category-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                </svg>
+              </div>
+              <h3>Soft Skills</h3>
+            </div>
+            <div class="category-pills">
+              <span class="skill-pill featured">Problem Solving</span>
+              <span class="skill-pill">Time Management</span>
+              <span class="skill-pill">Adaptability</span>
+              <span class="skill-pill">Responsibility</span>
+              <span class="skill-pill featured">Organizational Leadership</span>
+              <span class="skill-pill">Cross-functional Teamwork</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         Experience & Traineeship Section
+         ====================================================================== -->
+    <section id="experience" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Professional Training</span>
+          <h2 class="section-title">Current Traineeship & Experience</h2>
+          <p class="section-description">
+            Advancing technical expertise through industry-aligned initiatives and hands-on software engineering programs.
+          </p>
+        </div>
+
+        <div class="timeline-container">
+          <!-- DEPI Traineeship Card -->
+          <div class="glass-card timeline-card">
+            <div class="timeline-header">
+              <div class="timeline-role-info">
+                <h3>Software Engineer Trainee – Full Stack Developer</h3>
+                <div class="timeline-company">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                    <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                  </svg>
+                  <span>Digital Egypt Pioneers Initiative (DEPI)</span>
+                </div>
+              </div>
+              <span class="timeline-badge current">Current Enrollee</span>
+            </div>
+
+            <div class="timeline-body">
+              <p>
+                Selected for the prestigious nationwide <strong>Digital Egypt Pioneers Initiative (DEPI)</strong> in the <strong>Software Engineer Track - Full Stack Developer using C# and .NET Framework</strong>.
+              </p>
+              <ul class="timeline-bullets">
+                <li>Undergoing intensive training on enterprise application architecture, object-oriented design patterns, and full-stack software development practices.</li>
+                <li>Developing high-performance backend APIs, data pipelines, and database integration models utilizing C# and the .NET ecosystem.</li>
+                <li>Gaining practical experience in building clean, decoupled systems with unit testing, version control workflows, and collaborative development.</li>
+              </ul>
+              <div class="timeline-tags">
+                <span class="timeline-tag">C#</span>
+                <span class="timeline-tag">.NET Framework</span>
+                <span class="timeline-tag">ASP.NET</span>
+                <span class="timeline-tag">SQL Server</span>
+                <span class="timeline-tag">Full-Stack Development</span>
+                <span class="timeline-tag">Git</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         Featured Projects Section
+         ====================================================================== -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Portfolio Showcase</span>
+          <h2 class="section-title">Featured Projects</h2>
+          <p class="section-description">
+            A selection of practical applications and problem-solving repositories showcasing code quality, system design, and algorithmic thinking.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1: Personal Portfolio -->
+          <div class="glass-card project-card">
+            <div class="project-top">
+              <div class="project-folder-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+                </svg>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/shazamosad" target="_blank" rel="noopener noreferrer" class="project-icon-link" title="Source Code">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/>
+                  </svg>
+                </a>
+                <a href="#hero" class="project-icon-link" title="Live Preview">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <h3 class="project-title">Personal Portfolio Website</h3>
+            <p class="project-desc">
+              A modern, high-performance personal portfolio engineered with semantic HTML5, CSS3 with custom variables for seamless Dark/Light theme switching, and modular JavaScript. Features a responsive mobile drawer, glassmorphic UI, and contact form handling.
+            </p>
+
+            <div class="project-highlight-box">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--primary);">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <span>Fully responsive & deployed via Git</span>
+            </div>
+
+            <div class="project-tech-stack">
+              <span class="tech-tag">HTML5</span>
+              <span class="tech-tag">CSS3</span>
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">Git</span>
+              <span class="tech-tag">Glassmorphism</span>
+            </div>
+          </div>
+
+          <!-- Project 2: Problem Solving Repository -->
+          <div class="glass-card project-card">
+            <div class="project-top">
+              <div class="project-folder-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M16.5 9.4 7.55 4.24a1.79 1.79 0 0 0-2.55 1.55v12.42a1.79 1.79 0 0 0 2.55 1.55L16.5 14.6a1.79 1.79 0 0 0 0-3.2z"></path>
+                </svg>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/shazamosad" target="_blank" rel="noopener noreferrer" class="project-icon-link" title="Source Code">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <h3 class="project-title">Problem Solving Repository</h3>
+            <p class="project-desc">
+              A comprehensive algorithmic repository featuring 100+ solved competitive programming challenges. Focuses on asymptotic efficiency, space optimization, and elegant implementations across Codeforces, LeetCode, and HackerRank.
+            </p>
+
+            <div class="project-highlight-box">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--accent-emerald);">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+              <span>100+ Competitive Problems Solved</span>
+            </div>
+
+            <div class="project-tech-stack">
+              <span class="tech-tag">C++</span>
+              <span class="tech-tag">Java</span>
+              <span class="tech-tag">Algorithms</span>
+              <span class="tech-tag">Data Structures</span>
+              <span class="tech-tag">Dynamic Programming</span>
+            </div>
+          </div>
+
+          <!-- Project 3: Full-Stack .NET Application -->
+          <div class="glass-card project-card">
+            <div class="project-top">
+              <div class="project-folder-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                  <polyline points="2 17 12 22 22 17"></polyline>
+                  <polyline points="2 12 12 17 22 12"></polyline>
+                </svg>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/shazamosad" target="_blank" rel="noopener noreferrer" class="project-icon-link" title="Source Code">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <h3 class="project-title">Full-Stack .NET Web Application</h3>
+            <p class="project-desc">
+              Enterprise-grade web application developed as part of the DEPI curriculum. Incorporates multi-tier architecture, clean RESTful endpoints, SQL Server database persistence, and secure data handling.
+            </p>
+
+            <div class="project-highlight-box">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--primary);">
+                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+              </svg>
+              <span>DEPI Capstone Architecture</span>
+            </div>
+
+            <div class="project-tech-stack">
+              <span class="tech-tag">C#</span>
+              <span class="tech-tag">.NET Framework</span>
+              <span class="tech-tag">ASP.NET</span>
+              <span class="tech-tag">SQL</span>
+              <span class="tech-tag">REST API</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         Volunteering & Student Activity Section
+         ====================================================================== -->
+    <section id="volunteering" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Community & Leadership</span>
+          <h2 class="section-title">Volunteering & Activities</h2>
+          <p class="section-description">
+            Contributing to team growth, community initiatives, and cross-functional leadership inside student organizations.
+          </p>
+        </div>
+
+        <div class="timeline-container">
+          <!-- Star Union Student Activity Card -->
+          <div class="glass-card timeline-card">
+            <div class="timeline-header">
+              <div class="timeline-role-info">
+                <h3>HR Member</h3>
+                <div class="timeline-company">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="9" cy="7" r="4"></circle>
+                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                  </svg>
+                  <span>Star Union Student Activity</span>
+                </div>
+              </div>
+              <span class="timeline-badge">2026 – Present</span>
+            </div>
+
+            <div class="timeline-body">
+              <p>
+                Active Human Resources team member driving collaborative culture, talent coordination, and organizational efficiency within a major student-led initiative.
+              </p>
+              <ul class="timeline-bullets">
+                <li>Engaging in comprehensive organizational planning, member performance monitoring, and team motivation initiatives.</li>
+                <li>Facilitating cross-committee collaboration to ensure aligned operations between technical, PR, and logistics teams.</li>
+                <li>Actively contributing to large-scale event planning, execution, and post-event debriefings.</li>
+              </ul>
+              <div class="timeline-tags">
+                <span class="timeline-tag">Human Resources</span>
+                <span class="timeline-tag">Organizational Planning</span>
+                <span class="timeline-tag">Cross-Committee Collaboration</span>
+                <span class="timeline-tag">Event Execution</span>
+                <span class="timeline-tag">Leadership</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         Contact & Socials Section
+         ====================================================================== -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Get In Touch</span>
+          <h2 class="section-title">Let's Connect & Build Together</h2>
+          <p class="section-description">
+            Feel free to reach out for software engineering inquiries, internships, project collaborations, or just a tech conversation!
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Contact Info Panel -->
+          <div class="glass-card contact-info-panel">
+            <div class="contact-intro">
+              <h3>Contact Information</h3>
+              <p>
+                I am actively seeking software engineering internships, collaborative development projects, and learning opportunities.
+              </p>
+            </div>
+
+            <div class="contact-items">
+              <!-- Email Card -->
+              <div class="contact-item">
+                <div class="contact-item-left">
+                  <div class="contact-item-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                      <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                  </div>
+                  <div>
+                    <div class="contact-item-label">Email</div>
+                    <a href="mailto:shazamosad78@gmail.com" class="contact-item-val">shazamosad78@gmail.com</a>
+                  </div>
+                </div>
+                <button class="copy-btn" data-copy="shazamosad78@gmail.com" data-label="Email" title="Copy Email">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                  </svg>
+                </button>
+              </div>
+
+              <!-- Phone Card -->
+              <div class="contact-item">
+                <div class="contact-item-left">
+                  <div class="contact-item-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                    </svg>
+                  </div>
+                  <div>
+                    <div class="contact-item-label">Phone</div>
+                    <a href="tel:+201124725982" class="contact-item-val">+20 112 472 5982</a>
+                  </div>
+                </div>
+                <button class="copy-btn" data-copy="+201124725982" data-label="Phone number" title="Copy Phone Number">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                  </svg>
+                </button>
+              </div>
+
+              <!-- Location Card -->
+              <div class="contact-item">
+                <div class="contact-item-left">
+                  <div class="contact-item-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                      <circle cx="12" cy="10" r="3"></circle>
+                    </svg>
+                  </div>
+                  <div>
+                    <div class="contact-item-label">Location</div>
+                    <span class="contact-item-val">Giza, Egypt</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Social Links -->
+            <div>
+              <div class="contact-item-label" style="margin-bottom: 12px;">Social Profiles</div>
+              <div class="social-links-bar">
+                <a href="https://www.linkedin.com/in/shazamosad" target="_blank" rel="noopener noreferrer" class="social-pill-btn">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76c.86 0 1.55-.7 1.55-1.55a1.55 1.55 0 0 0-3.1 0c0 .86.69 1.55 1.55 1.55m1.37 9.74v-8.37H5.1v8.37h2.73z"/>
+                  </svg>
+                  <span>LinkedIn</span>
+                </a>
+                <a href="https://github.com/shazamosad" target="_blank" rel="noopener noreferrer" class="social-pill-btn">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/>
+                  </svg>
+                  <span>GitHub</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form Panel -->
+          <div class="glass-card contact-form-panel">
+            <form id="contact-form" class="contact-form" novalidate>
+              <div class="form-group">
+                <label for="contact-name" class="form-label">Your Name</label>
+                <input type="text" id="contact-name" class="form-control" placeholder="Jane Doe" required />
+                <span class="form-feedback">Please enter your name</span>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-email" class="form-label">Your Email</label>
+                <input type="email" id="contact-email" class="form-control" placeholder="jane@example.com" required />
+                <span class="form-feedback">Please provide a valid email</span>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-subject" class="form-label">Subject</label>
+                <input type="text" id="contact-subject" class="form-control" placeholder="Project collaboration or job inquiry" />
+              </div>
+
+              <div class="form-group">
+                <label for="contact-message" class="form-label">Message</label>
+                <textarea id="contact-message" class="form-control" rows="5" placeholder="Hi Shaza, I'd like to talk to you about..." required></textarea>
+                <span class="form-feedback">Please enter your message</span>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 10px;">
+                <span>Send Message</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================================
+       Footer
+       ======================================================================== -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <span class="logo-badge" style="width: 28px; height: 28px; font-size: 0.8rem;">SM</span>
+        <span>Shaza Mosad</span>
+      </div>
+
+      <div class="footer-copy">
+        Designed & Built by Shaza Mosad &bull; All Rights Reserved &copy; 2026
+      </div>
+
+      <button id="back-to-top" class="back-to-top-btn" title="Back to Top" aria-label="Back to Top">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+      </button>
+    </div>
+  </footer>
+
+  <!-- Toast Container -->
+  <div id="toast-container" class="toast-container" aria-live="polite"></div>
+
+  <!-- JavaScript -->
+  <script src="./script.js"></script>
+</body>
+</html>
